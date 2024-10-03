@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MortagePaymentCalculator</string>
+    <string name="enter_amount">$ Enter Amount</string>
+    <string name="mortgage_principal_amount">Mortgage Principal Amount</string>
+    <string name="interest_rate">Interest Rate</string>
+    <string name="enter_the_interest">% Enter the interest</string>
+    <string name="payment_frequency">Payment Frequency</string>
+    <string name="amortization_period">Amortization period</string>
+    <string name="calculate">Calculate</string>
+</resources>

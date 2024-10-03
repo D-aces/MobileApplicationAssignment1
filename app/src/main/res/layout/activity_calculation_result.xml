@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalculationResult">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/baseline_arrow_back_24"
+        app:title="Mortgage Payment Calculator" />
+
+    <TableLayout
+        android:layout_width="409dp"
+        android:layout_height="258dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/secondary"
+                android:gravity="right"
+                android:padding="10sp"
+                android:text="Monthly Owing:"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/monthlyOwingResult"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="@color/tertiary"
+                android:gravity="right"
+                android:padding="10sp"
+                android:text="TextView"
+                android:textColor="@color/accent" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/secondary"
+                android:gravity="right"
+                android:maxWidth="150dp"
+                android:padding="10sp"
+                android:text="Total Number of Payments:"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/totalPaymentsResult"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="@color/tertiary"
+                android:gravity="right"
+                android:padding="10sp"
+                android:text="TextView"
+                android:textColor="@color/accent" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/secondary"
+                android:gravity="right"
+                android:padding="10sp"
+                android:text="For:"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/totalAmortization"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:background="@color/tertiary"
+                android:gravity="right"
+                android:padding="10sp"
+                android:text="TextView"
+                android:textColor="@color/accent" />
+        </TableRow>
+
+    </TableLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
